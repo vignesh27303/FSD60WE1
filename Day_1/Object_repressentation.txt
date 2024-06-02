@@ -1,0 +1,25 @@
+**Objects**
+
+The representation of the data in key and value pairs is called objects.
+it is an important form of data representation in Javascript.
+It is an non primitive datatype.ie if a object is copied to a new object only the reference (memory adress is copied)
+The newly created objefct formed by copying the another object. It can hold any type of primitive data types likes string,number,boolean etc and ti calso have another object inside it and can also hold arrays inside it.
+It can have undefined and null characters
+The object names and characters are case sensitive
+For of amd For each loops cannot be used in objects 
+representation:
+
+object name = { keys: values,
+                keys:values}
+Object.keys(object name) ==> will give the array of keys in it 
+object.values(object name) ==> will give the array of values
+
+value can be retived from object by the below syntax:
+
+objectname[keys]
+
+Example:
+var newobj={ name: Vignesh,
+             age: 28}
+
+newobj[name] ==> Vignesh

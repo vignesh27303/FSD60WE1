@@ -1,0 +1,13 @@
+** HTTP1.1 **
+It was created in 1997.
+it loads resources one after the other, so if one resource cannot be loaded it blocks all other resources behind it.
+Each request has to wait for the response before the next request can be sent.
+It releis on the transportation layer to avoid buffer overflow so each TCP transactions requires a flow control mechanism.
+HTTP1 dopes not use binary framing layer.
+
+** HTTP/2 **
+It was created in 2015, to solve the problems of HTTP1.1
+It is much faster and more efficient than HTTP1.1
+It uses single TCP connections to send multiple streams of data so ther is no blocking of resources
+It uses multiplexing to allow concurrent request and responses over a single TCP connection
+It uses a binary framing layer  
