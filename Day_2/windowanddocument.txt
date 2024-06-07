@@ -1,0 +1,13 @@
+Window Object:
+Windows is the global object in the client side, it is representing the browser window contain all the DOM document. 
+Window acts as the root of all the document object model.It is supported by all the browsers.
+ The browser window automatically includes the global objects,functions and variables.
+It is responsible for providing methods for  broswer interactions and managing frames,tabs or windows 
+such as alert (),confirm(),set Timeout() and setInterval() etc.
+
+Document Object:
+It is an HTML document that appears in the browser window and servers as the interface for the interaction 
+with the web page content.The browser generates a DOM of a web page while it is loading
+It is mainly responsible for the interface for content manupulation.Using these allows developers to develop 
+interactive websites. DOM manipulation methods offers mentods to access and manipulaqte trhe structure and 
+the content of the object,like get queryselector(),createelement() and interHTML.
