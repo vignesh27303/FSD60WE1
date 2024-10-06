@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-design</title>
+    <style>
+    .board{
+        width:250px;
+        height: 250px;
+        display:flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        background-color:lightpink;
+        padding:10px;
+        margin:0px;
+
+        /* >.pocket-upper{
+        width:100%;
+        display:flex;
+        justify-content:space-between ;
+        }
+        >.pocket-lower{
+            width:100%;
+            display:flex;
+            justify-content: space-between;
+
+        } */
+    }   
+    .pocket{
+        width:20px;
+        height:20px;
+        border-radius: 50%;
+        background-color: black;
+
+    }    
+    .pocket-upper{
+        width:100%;
+        display:flex;
+        justify-content:space-between ;
+        }
+        .pocket-lower{
+            width:100%;
+            display:flex;
+            justify-content: space-between;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="board"> 
+    <div class="pocket-upper"> 
+        <div class="pocket"></div>
+        <div class="pocket"></div>
+
+    </div>
+    <div class="pocket-lower">
+        <div class="pocket"></div>
+        <div class="pocket"></div>
+    </div>
+    </div>
+</body>
+</html>
