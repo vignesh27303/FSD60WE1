@@ -1,0 +1,53 @@
+/* Getting the file system moudles*/
+const fileMan = require('node:fs');
+const timeStamp  = new Date(); 
+
+/* indicator to check if the folder was already created */
+let flag = 0;
+
+/* function to create the folder and file */
+ function createFolder(folderPath,filePath){
+    /* Folder creation */
+    if (flag == 0){
+        fileMan.mkdir(folderPath,(err)=>{
+            if (err)
+            console.log(" Error in folder creation: " + err  )
+            else{
+                console.log("No errors found ");
+                flag = 1;
+            }
+        });
+    }
+    else{
+        console.log("folder was already created, so going for file creation in the directory");
+    }
+
+    /* file creation*/
+fileMan.appendFileSync(filePath,`Data in the file: ${timeStamp}`,{encoding:'utf8'})
+
+}
+
+/* File retrival from a folder */
+
+function readDirectory(folderPath){
+    const directory = folderPath;
+
+    fileMan.readdir(directory,(err,file_list)=>{
+        if (err) {
+            console.log("there are errors in read: " + err);
+        }
+        else{
+            file_list.forEach(file_Name => {
+                console.log(file_Name);
+            } )
+        }
+
+    })
+}
+
+/* export the funtions created */
+
+module.exports={
+    createFolder,
+    readDirectory
+}
